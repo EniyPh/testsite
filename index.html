@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Щось там</title>
+    <style>
+        body {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2.5;
+        }
+        img {
+            height: 500px;
+            display: block;
+            margin: 80px auto;
+        }
+        a {
+            color: rgba(0, 81, 255, 0.959);
+            text-decoration: none;
+
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline red;
+        }
+        button {
+            color: white;
+            background-color: green;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Ноутбук HP Victus Gaming Laptop 15-fa1031ua (BM0P8EA) Mica Silver / 15.6" IPS / Intel Core i5-12500H / RAM 16 ГБ / SSD 512 ГБ / RTX 4060, 8 ГБ
+    </h1>
+    <img 
+        src="https://content1.rozetka.com.ua/goods/images/big/550755475.jpg" 
+        alt="Ноутбук HP Victus Gaming Laptop 15">
+
+    <span>★</span>
+
+    <a 
+        href="https://rozetka.com.ua/ua/hp-bm0p8ea/p511419984/comments/">
+        8 відгуків
+    </a>
+
+    <p>
+        Экран 15.6" IPS (1920x1080) Full HD, матовый / Intel Core i5-12500H (2.5 - 4.5 ГГц) / RAM 16 ГБ / SSD 512 ГБ / nVidia GeForce RTX 4060, 8 ГБ / без ОД / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / 2.29 кг / сірий
+    </p>
+
+    <button>Дізнатись ціну</button>
+
+    <script>
+        
+        const priceBtn = document.querySelector('button');
+
+        priceBtn.onclick = function(){
+            const price = 14000;
+            alert("Повна ціна за 1 товар " + price);
+            const amount = 2;
+            const totalPrice = price * amount * 0.9;
+            alert("Повна ціна зі знижкою " + totalPrice);
+        }
+
+        const symbol = document.querySelector('span');
+        symbol.onclick = function(){
+            symbol.style.color = 'orange';
+            alert('Ваш відгук враховано')
+        }
+
+        const imgrev = document.querySelector('img');
+        imgrev.onmouseover = function (){
+            imgrev.src = "https://pm1.aminoapps.com/6897/3ff61ceb6dfa36566ec4b4f568bf686fb3833e36r1-604-403v2_hq.jpg"
+        }
+        imgrev.onmouseout = function(){
+            imgrev.src = "https://content1.rozetka.com.ua/goods/images/big/550755475.jpg"
+        }
+    </script>
+</body>
+</html>
